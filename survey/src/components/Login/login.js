@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import COVER_IMAGE from '../../assets/cover_image.jpg';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
+import swal from 'sweetalert';
+
 
 const Login = ({ setUser }) => {
     const [Username, setUsername] = useState("");
@@ -32,10 +34,22 @@ const Login = ({ setUser }) => {
             if (user) {
                 console.log("Login successful!");
                 setUser(user);
-                navigate("/Dashboard");
+                swal({
+                    title: "Welcome!",
+                    text: "You have successfully logged in.",
+                    icon: "success",
+                    button: {
+                        text: "Go to Dashboard",
+                        className: "btn-success", // You can style this button with your own classes
+                    },
+                    timer: 4000, // The alert will automatically close after 3 seconds
+                }).then(() => {
+                    navigate("/Dashboard");
+                });
             } else {
                 setError("Invalid username or password");
             }
+            
         } catch (error) {
             console.error("Error fetching user data", error);
             setError("An error occurred. Please try again.");

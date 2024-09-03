@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql2');
+require('dotenv').config();
+
 
 const app = express();
 const port = 5000;
@@ -9,11 +11,11 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  host: '127.0.0.1',
-  port: 3306,
-  user: 'root',
-  password: '',
-  database: 'Disability Survey'
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: process.env.DB_PORT,
 });
 
 db.connect(err => {
@@ -22,10 +24,6 @@ db.connect(err => {
     return;
   }
   console.log('connected as id ' + db.threadId);
-});
-
-app.get('/', (req,res) => {
-    res.status(200).send({ message: 'Server is up...' });
 });
 
 // SignUp User
