@@ -24,6 +24,10 @@ db.connect(err => {
   console.log('connected as id ' + db.threadId);
 });
 
+app.get('/', (req,res) => {
+    res.status(200).send({ message: 'Server is up...' });
+});
+
 // SignUp User
 app.post('/api/register', (req, res) => {
   const { Username, Password, Mobile } = req.body;
