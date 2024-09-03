@@ -49,7 +49,7 @@ const Register = () => {
                 <img src={COVER_IMAGE} alt="Login Visual" className="w-full h-full object-cover" />
             </div>
 
-            <div className='w-full md:w-1/2 h-1/2 bg-[#f5f5f5] flex flex-col  p-10 md:pt-20 justify-between items-center'>
+            <div className='w-full md:w-1/2 h-full bg-[#f5f5f5] flex flex-col  p-10 md:pt-20 justify-between items-center'>
                 {/* <h1 className='text-lg md:text-xl text-[#060606] font-semibold text-left'>Survey Of Person With Disability</h1> */}
 
                 <div className='w-full flex flex-col max-w-[580px]'>
