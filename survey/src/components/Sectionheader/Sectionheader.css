@@ -1,0 +1,64 @@
+/* src/SectionHeader.css */
+.section-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+}
+
+.section-header {
+    background-color: #4b8794; /* The background color for the header */
+    color: white;
+    padding: 5px 40px; /* Padding adjusted for a more compact look */
+    border-radius: 20px; /* Rounded corners for the header */
+    font-weight: bold;
+    font-size: 1.2rem; /* Font size for the title */
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    display: inline-block; /* Makes it easier to control the attached elements */
+}
+
+.section-header-container::before,
+.section-header-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 60px); /* Leave space for the header */
+    height: 2px;
+    background-color: #d3d3d3; /* Light grey color for the line */
+    z-index: 0;
+}
+
+.section-header-container::before {
+    left: 0;
+}
+
+.section-header-container::after {
+    right: 0;
+}
+
+/* Small white rectangles on each side of the header */
+.section-header::before,
+.section-header::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border:1px solid rgb(148, 148, 148);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 2px; /* Slight rounding for the rectangles */
+    z-index: 1;
+}
+
+.section-header::before {
+    left: -4px; /* Adjusts position to be flush with the edge of the blue box */
+}
+
+.section-header::after {
+    right: -4px; /* Adjusts position to be flush with the edge of the blue box */
+}

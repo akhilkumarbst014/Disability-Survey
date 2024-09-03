@@ -1,0 +1,103 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    text-align: center;
+    border-radius: 7px;
+
+  }
+  .card-body1 {
+    text-align: center;
+    background-color: #F8F9FA;
+    border-radius: 7px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .welcome-message {
+    font-weight: bold;
+  }
+  
+  .system-status {
+    font-size: 15px;
+    color: gray;
+  }
+  
+  .current-date {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color:rgb(87, 44, 44)
+  }
+  .custom-thead {
+    background-color: red !important;
+  }
+
+
+/* Survey count */
+/* src/SurveyInfo.css */
+.survey-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh;Center vertically within the viewport  */
+  background-color: #f8f9fa; 
+  padding: 10px;
+}
+
+.survey-info-content {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap content on smaller screens */
+}
+
+.survey-text {
+  font-size: 1.35rem; /* Larger text size */
+  font-weight: 600; /* Semi-bold text */
+  color: #4b8794; /* Custom text color */
+  margin: 0;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.survey-count {
+  display: inline-block;
+  background-color: #28a745; /* Green background for count badge */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border-radius: 25px; /* Rounded badge */
+  font-size: 1.4rem; /* Larger font size for the count */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.min-width-th {
+  min-width: 60px; /* Adjust the value to your preference */
+  text-align: center;
+  padding: 4px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+
+
+/* Add this to your CSS file or in a style block */
+.animated-progress .progress-bar {
+  transition: width 1s ease-in-out; /* Adjust duration and easing as needed */
+}

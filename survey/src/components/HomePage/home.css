@@ -1,0 +1,153 @@
+/* homepage.css */
+
+/* General container styling */
+.container-fluid {
+    padding: 0 15px;
+    /* Adjust container padding */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* Adjust top margin */
+}
+
+/* Progress container */
+.progress-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    /* Reduce bottom margin */
+    padding: 0 15px;
+}
+
+/* Progress item styling */
+.progress-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+    /* Space between items */
+}
+
+/* Circle styling */
+.circle {
+    border-radius: 50%;
+    width: 40px;
+    /* Circle size */
+    height: 40px;
+    /* Circle size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dddcda;
+    margin-right: 10px;
+    /* Space between circle and label */
+}
+
+/* Line container styling */
+/* .line-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+} */
+
+/* Line styling */
+.line {
+    /* width: 3px; */
+    /* Line width */
+    /* height: 40px; */
+    /* Line height */
+    background-color: whitesmoke;
+    flex-grow: 1;
+    height: 2px;
+    
+    /* background-color: #d3d3d3; */
+    margin: 0 10px;
+    
+}
+
+
+/* Label styling */
+.label {
+    font-size: 16px;
+    /* Font size */
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.active {
+    background-color: #e5b4b4;
+}
+
+/* Form card styling */
+.card {
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Form header styling */
+.card-header {
+    padding: 10px 15px;
+    /* Padding */
+}
+
+/* Form body styling */
+.card-body {
+    background-color: #F2F0EC;
+    padding: 25px 20px 25px 20px;
+    /* Padding */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 10px;
+    /* Bottom margin */
+}
+
+/* Button styling */
+.btn {
+    font-size: 14px;
+    /* Font size */
+    padding: 8px 16px;
+    /* Padding */
+    margin: 5px;
+    /* Margin */
+}
+
+/* Responsive styling */
+@media (max-width: 767px) {
+    .progress-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 25px;
+        /* Adjust padding on small screens */
+    }
+
+    .progress-item {
+        margin: 5px 0;
+        /* Space between items on small screens */
+    }
+
+    .circle {
+        width: 30px;
+        /* Smaller circle size */
+        height: 30px;
+        /* Smaller circle size */
+    }
+
+    .line {
+        height: 30px;
+        /* Smaller line height */
+    }
+
+    .label {
+        font-size: 14px;
+        /* Smaller font size */
+    }
+
+    .card-header,
+    .card-body {
+        padding: 10px;
+        /* Reduce padding */
+    }
+}

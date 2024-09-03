@@ -1,0 +1,90 @@
+.logo {
+  height: 50px;
+  margin-left: 20px;
+  transition: height 0.3s ease;
+}
+
+.profile-icon {
+  width: 35px;
+  height: 35px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    height: 45px;
+  }
+
+  .profile-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo {
+    height: 45px;
+  }
+
+  .profile-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    height: 33px;
+    margin-left: 5px;
+  }
+
+  .profile-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.dropdown-menu {
+  width: 120px;
+  min-width: auto;
+}
+
+.dropdown-item-text {
+  font-weight: bold;
+}
+
+.navbar .dropdown-toggle {
+  position: relative;
+  padding-right: 15px;
+}
+
+.navbar .dropdown-toggle .icon-wrapper {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Optional: Customize the Google Translate dropdown */
+#google_translate_element {
+  display: flex;
+  align-items: center;
+  height: 30px; /* Adjust height as needed */
+}
+
+.goog-te-gadget {
+  display: flex !important; /* Force flexbox layout */
+  align-items: center;
+  font-size: 0; /* Hide unnecessary text */
+  white-space: nowrap;
+}
+
+.goog-te-gadget .goog-te-combo {
+  font-size: 14px; /* Adjust font size as needed */
+  height: 28px; /* Adjust height as needed */
+  line-height: 1.2;
+  margin-left: 5px; /* Space between elements */
+}

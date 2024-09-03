@@ -1,0 +1,257 @@
+/* Support.css */
+.custom-card {
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.btn-custom {
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.section-title {
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-weight: 500;
+}
+
+.contact-section {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.section-heading {
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.section-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+/* FAQ Section */
+.time-management{
+  margin-top:30px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+.placement{
+  margin:30px 0px 50px 0px;
+  padding: 0px 20px 10px 20px;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+  background-color: whitesmoke;
+}
+
+
+
+.f3 {
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.f1 {
+  /* height: auto; */
+  width: 45px;
+  padding-right: 15px;
+}
+
+.f2 {
+  background-color: rgb(67, 102, 116);
+  margin: 3px;
+  padding: 10px;
+  color: white;
+  font-family: cursive;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+/* .accordion-button:not(.collapsed) {
+  background-color: rgb(67, 102, 116);
+} */
+
+/* .accordion-button.collapsed:hover {
+  background-color: rgb(87, 122, 136);
+} */
+ /* Hover color only when the item is collapsed */
+
+
+@media screen and (max-width:1408px){
+  .placement{
+     padding: 0px;
+     margin:0px;
+  }
+  .fund{padding-bottom: 20px;}
+  .f3{
+  margin-top:10px;
+  padding-top: 20px;
+  }
+
+}
+
+
+
+.accordion-collapse.show {
+  display: block !important; /* Ensure it is visible */
+  visibility: visible;       /* Override any potential visibility issues */
+}
+
+.accordion-body {
+  transition: opacity 0.3s ease; /* Smooth transition */
+  opacity: 1; /* Ensure the content is fully visible */
+  color: #000; /* Ensure text color is black */
+}
+
+.accordion-collapse.collapse {
+  opacity: 0; /* Start hidden */
+}
+
+.accordion-collapse.show {
+  opacity: 1; /* Fully visible when expanded */
+}
+
+
+/* button */
+:root {
+  --size-default: 22px;
+  --size-sm: 10px;
+  --color-green: #58DD93;
+  --color-black: #000;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@property --glowColor {
+  syntax: "<color>";
+  initial-value: #58DD93;
+}
+@keyframes rotate {
+  0% {
+    --angle: 0deg;
+    --glowColor: var(--color-green);
+  }
+  100% {
+    --angle: 360deg;
+    --glowColor: var(--color-green);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.btn1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: none;
+  background: rgb(15, 31, 65);
+  position: relative;
+/* Use padding for a better responsive layout */
+  text-decoration: none;
+  transition: all 0.18s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  margin: 8px auto; /* Center the button and add some vertical margin */
+  width: 80%; /* Use percentage width for responsiveness */
+  max-width: 100px; /* Limit the maximum width */
+}
+
+.btn1:after,
+.btn1:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: calc(100px + 1.5px);
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: conic-gradient(
+    from var(--angle) at 50% 50%,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 33%,
+    var(--glowColor) 50%,
+    rgba(0, 0, 0, 0) 66%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  animation: rotate 2s infinite linear;
+}
+
+.btn1:before {
+  animation: rotate 2s infinite linear;
+  filter: blur(20px);
+}
+
+.btn1 .btnInner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 50px;
+  color: var(--color-green);
+  font-weight: 500;
+  font-size: 0.9rem; /* Use rem for font-size to be responsive */
+  z-index: 1;
+  transition: all 0.18s ease;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(40px);
+  backface-visibility: hidden;
+  text-align: center; /* Center the text */
+}
+
+.btn1:hover .btnInner {
+  background: rgba(88, 221, 147, 0.1);
+  color: #adeeca;
+}
+
+.btn1:active {
+  transform: scale(0.95);
+}
+
+/* Media Queries for additional responsiveness */
+
+@media (max-width: 768px) {
+  .btn1 {
+    width: 90%;
+    max-width: 250px;
+  }
+  .btn1 .btnInner {
+    font-size: 0.9rem;
+  }
+  .paddingbox{
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn1 {
+    width: 95%;
+    max-width: 200px;
+  }
+  .btn1 .btnInner {
+    font-size: 0.8rem;
+  }
+  .paddingbox{
+    padding-top: 10px;
+  }
+}
+
+
+
+
+
+
+
+

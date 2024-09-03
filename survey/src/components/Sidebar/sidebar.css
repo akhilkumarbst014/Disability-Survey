@@ -1,0 +1,185 @@
+/* src/components/Sidebar/Sidebar.css */
+
+/* Default sidebar styling */
+/* .sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    background-color: #343a40; /* Dark background */
+    /* color: #fff; Light text color
+    transition: transform 0.3s ease;
+    z-index: 1000; Ensure it’s on top */
+/* } */ 
+/* 
+.sidebar-open {
+    transform: translateX(0); Sidebar is visible
+} */
+
+/* For mobile, hide sidebar by default and show a top-aligned menu */
+/* @media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%); Start hidden
+        transition: transform 0.3s ease;
+    }
+
+    .sidebar-open {
+        transform: translateX(0); Slide in
+    /* } 
+
+    .btn-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 1.5rem;
+        background: transparent;
+        border: none;
+        color: #fff;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+    }
+
+    .overlay-active {
+        display: block;
+    }
+
+    .nav-pills .nav-link {
+        display: flex;
+        justify-content: space-between;
+    }
+} */
+
+/* Common styles */
+/* .nav-link {
+    color: #fff;
+}
+
+.nav-link.active {
+    background-color: #495057;
+}
+
+.badge {
+    font-size: 0.75em;
+}
+
+.text-muted {
+    color: #6c757d !important;
+} */
+
+
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 50vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto; 
+    background-color: #184c54!important; /* Dark background */
+    color: #fff; /* Light text color */
+    transition: transform 0.3s ease;
+    z-index: 1000; /* Ensure it’s on top */
+}
+
+.sidebar-open {
+    transform: translateX(0); /* Sidebar is visible */
+}
+
+.nav-pills .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-pills .nav-link:hover {
+    background-color: #e3d9d9; /* Change background on hover */
+    color: #1e2129; /* Change text color on hover */
+}
+
+/* Active effect */
+.nav-link.active {
+    background-color: #217fdd; /* Active background color */
+    color: #fff; /* Active text color */
+}
+
+/* Scaling effect on icons when hovered */
+.nav-pills .nav-link .me-2 {
+    transition: transform 0.3s ease;
+}
+
+.nav-pills .nav-link:hover .me-2,
+.nav-link.active .me-2 {
+    transform: scale(1.2); /* Scale the icon on hover and when active */
+}
+
+/* Badge styling */
+.badge {
+    font-size: 0.75em;
+}
+
+/* Text-muted color override */
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80%; /* Adjust width for mobile */
+        height: 100%; /* Full height on mobile */
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .sidebar-open {
+        transform: translateX(0); /* Slide in */
+    }
+
+    .btn-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 1.5rem;
+        background: transparent;
+        border: none;
+        color: #fff;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+    }
+
+    .overlay-active {
+        display: block;
+    }
+}
+
+

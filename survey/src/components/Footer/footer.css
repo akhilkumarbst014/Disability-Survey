@@ -1,0 +1,22 @@
+/* Footer.css */
+.footer {
+    color: #fff;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-logo {
+    max-height: 50px;
+}
+
+.footer .container {
+    padding-left: 15px;
+    padding-right: 15px; 
+}
