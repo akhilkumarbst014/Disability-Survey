@@ -93,14 +93,6 @@ const PersonalInfoForm = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        // if (!validateForm()) {
-        //     return;
-        //   }
-
-        /////////////////
-        // if (currentStep === 1 && !validateStep1()) {
-        //     return; // Prevent submission if validation fails
-        // }
 
 
 
@@ -134,16 +126,6 @@ const PersonalInfoForm = () => {
             focusFirstErrorField();
             return; // Prevent going to next step if validation fails
         }
-        // if (!validateForm()) {
-        //     return;
-        //   }
-
-
-        // setCurrentStep(currentStep + 1);
-        // if (isDisabled) {
-        //     setShowDisabilityDetails(true);
-        // }
-
 
 
         try {
