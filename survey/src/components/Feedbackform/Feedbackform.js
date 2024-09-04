@@ -19,7 +19,7 @@ const Feedbackform = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formData);
-        // Add further logic to handle the form submission here
+        // Add further logic 
     };
 
     const handleRefreshFeedback = () => {
