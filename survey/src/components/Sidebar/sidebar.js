@@ -129,13 +129,13 @@ const Sidebar = ({ isOpen, toggleSidebar, userName, user }) => {
         <hr className="text-light" />
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item">
-            <Link to="/" className="nav-link ">
+            <Link to="#" className="nav-link ">
               <FaTasks className="me-2" style={{ marginTop: '5px' }} />
               Tasks <span className="badge ms-auto">16</span>
             </Link>
           </li>
           <li>
-            <Link to="/" className="nav-link ">
+            <Link to="#" className="nav-link ">
               <FaBolt className="me-2" style={{ marginTop: '5px' }} />
               Activities
             </Link>
@@ -155,13 +155,13 @@ const Sidebar = ({ isOpen, toggleSidebar, userName, user }) => {
             </Link>
           </li>
           <li>
-            <Link to="/" className="nav-link ">
+            <Link to="#" className="nav-link ">
               <FaStickyNote className="me-2" style={{ marginTop: '5px' }} />
               Note
             </Link>
           </li>
           <li>
-            <Link to="/" className="nav-link ">
+            <Link to="#" className="nav-link ">
               <FaChartBar className="me-2" style={{ marginTop: '5px' }} />
               Report
             </Link>
@@ -169,14 +169,14 @@ const Sidebar = ({ isOpen, toggleSidebar, userName, user }) => {
           <hr className="text-light" />
           <strong className="text-muted ms-3 mt-2 text-light">RECORDS</strong>
           <li>
-            <Link to="/" className="nav-link">
+            <Link to="#" className="nav-link">
               <FaUsers className="me-2" style={{ marginTop: '5px' }} />
               Team
             </Link>
           </li>
           <hr className="text-light" />
           <li>
-            <Link to="/" className="nav-link">
+            <Link to="#" className="nav-link">
               <FaCog className="me-2" style={{ marginTop: '5px' }} />
               Settings
             </Link>

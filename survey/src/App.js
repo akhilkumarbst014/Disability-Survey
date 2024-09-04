@@ -1,49 +1,4 @@
-// import React, { useState } from 'react';
-// import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-// import HomePage from './components/HomePage/homepage';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import Navbar from './components/Navbar/navbar';
-// import Login from './components/Login/login';
-// import Register from './components/Register/register';
-// import Sidebar from './components/Sidebar/sidebar';
-// import './App.css'; 
-// import Dashboard from './components/Dashboard/Dashboard';
-// // import Footer from './components/Footer/footer';
 
-// function App() {
-//     const [user, setUser] = useState(null);
-
-//     return (
-//         <Router>
-//             {!user ? (
-//                 <Routes>
-//                     <Route path="/register" element={<Register />} />
-//                     <Route path="/login" element={<Login setUser={setUser} />} />
-//                     {/* Redirect to login if not authenticated */}
-//                     <Route path="*" element={<Navigate to="/login" />} />
-//                 </Routes>
-//             ) : (
-//                 <>
-//                     <Navbar setUser={setUser} user={user} />
-//                     <div className="wrapper">
-//                         <Sidebar userName={user.Username} user={user}/>
-//                         <div className="main-content">
-//                             <Routes>
-//                                 {/* Navigate to dashboard after login */}
-//                                 <Route path="/Dashboard" element={<Dashboard user={user} />} />
-//                                 <Route exact path="/" element={<Navigate to="/Dashboard" />} />
-//                                 <Route exact path="/HomePage/homepage.js" element={<HomePage />} />
-//                             </Routes>
-//                         </div>
-//                     </div>
-//                     {/* <Footer /> */}
-//                 </>
-//             )}
-//         </Router>
-//     );
-// }
-
-// export default App;
 
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
@@ -105,7 +60,7 @@ function App() {
                                 {/* Default Route */}
                                 <Route path="/" element={<Navigate to="/Dashboard" />} />
                                 {/* Redirect any unmatched route to dashboard */}
-                                <Route path="*" element={<Navigate to="/Dashboard" />} />
+                                {/* <Route path="*" element={<Navigate to="/Dashboard" />} /> */}
                                 <Route exact path="/HomePage" element={<HomePage />} />
                                 <Route exact path="/Support" element={<Support />} />
                                 <Route exact path="/FAQ" element={<FAQ />} />
